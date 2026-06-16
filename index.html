@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt‑BR">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <title>SAITRON — Plataforma Inteligente de Soluções</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            main: '#0D2C54',
+            accent: '#0094FF',
+            dest: '#F9B827'
+          },
+          fontFamily: { sans: ['Inter', 'system‑ui', 'sans‑serif'] }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .tab‑ativo { @apply bg‑main text‑white border‑l‑4 border‑dest; }
+      .btn { @apply px‑3 py‑2 rounded font‑semibold transition; }
+      .btn‑p { @apply bg‑main text‑white hover:bg‑main/90; }
+      .btn‑s { @apply bg‑accent/10 text‑main hover:bg‑accent/20; }
+      .conteudo‑aba { display: none; }
+      .conteudo‑ativo { display: block; }
+    }
+  </style>
+</head>
+<body class="bg‑slate‑50 font‑sans text‑slate‑800">
+  <header class="bg‑main text‑white shadow‑md sticky top‑0 z‑40">
+    <div class="container mx‑auto px‑3 py‑3 flex flex‑col md:flex‑row justify‑between items‑center">
+      <h1 class="text‑xl font‑bold tracking‑wide">⚡ SAITRON</h1>
+      <p class="text‑sm opacity‑90">Plataforma Inteligente — Tudo em um só lugar</p>
+    </div>
+  </header>
+
+  <div class="container mx‑auto px‑2 mt‑3 flex flex‑col md:flex‑row gap‑2">
+    <!-- 📑 MENU DE NAVEGAÇÃO -->
+    <aside class="w‑full md:w‑64 bg‑white rounded shadow‑sm h‑fit sticky top‑16">
+      <nav class="flex flex‑row md:flex‑col overflow‑x‑auto md:overflow‑visible text‑sm">
+        <button class="aba‑link tab‑ativo px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="inicio">🏠 Início / IA</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="docs">📄 Docs • Cartório</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="grafica">🎨 Gráfica • Impressão</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="albuns">📸 Álbuns • Fotos HD</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="educ">📚 Livros • Vídeo‑aulas</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="contabil">📊 Contábil • MEI • DETRAN</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="licit">📑 Licitações • Leilões • Habitação</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="digital">🌐 Sites • Lojas • Apps</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="planos">💳 Planos • Pagamento</button>
+        <button class="aba‑link px‑3 py‑2 text‑left whitespace‑nowrap" data‑aba="sistema">⚙️ Voz • Atualização • Equipamentos</button>
+      </nav>
+    </aside>
+
+    <!-- 📌 ÁREA PRINCIPAL -->
+    <main class="flex‑1 bg‑white rounded shadow‑sm p‑3 min‑h‑[65vh]">
+      <!-- INÍCIO: COMANDO GERAL + INTELIGÊNCIAS -->
+      <section id="inicio" class="conteudo‑aba conteudo‑ativo">
+        <h2 class="text‑lg font‑semibold mb‑2">Comando Principal — resolva tudo com uma frase</h2>
+        <p class="text‑sm mb‑3">
+          ✅ 4 fontes de IA com troca automática<br>
+          ✅ Gera textos, cálculos, documentos, <b>imagens ULTRA‑REALISTAS FIÉIS AO SEU PEDIDO</b><br>
+          ✅ Sistema de <b>EVOLUÇÃO + VARREDURA AUTOMÁTICA</b> — busca novidades, normas, editais e modelos sempre atualizados<br>
+          ✅ Funciona <b>📱 CELULAR + 📴 OFFLINE</b>
+        </p>
+        <textarea class="w‑full border rounded p‑2 h‑28 mb‑2" placeholder="Ex: Gerar convite casamento, documentos licitação CAIXA, etiqueta com código de barras, álbum casamento, site pequena loja..."></textarea>
+        <div class="flex gap‑2 flex‑wrap">
+          <button class="btn btn‑p">⚡ Processar</button>
+          <button class="btn btn‑s">🔊 Voz</button>
+          <button class="btn btn‑s">📥 Baixar / PDF</button>
+          <button class="btn btn‑s">🔄 Atualizar / Buscar Novos</button>
+        </div>
+      </section>
+
+      <!-- DOCUMENTOS E CARTÓRIO -->
+      <section id="docs" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Documentos • Certidões • Cartório • Guias</h2>
+        <ul class="list‑disc list‑inside text‑sm mb‑3">
+          <li>Certidões: nascimento, casamento, óbito, união</li>
+          <li>CPF, RG, Título, contratos, procurações, declarações</li>
+          <li>Foto 3×4 pronta em folha A4</li>
+          <li>Guias: IPTU, Água, Luz, taxas prefeitura</li>
+          <li>Estrutura padrão para assinatura igual cartório</li>
+        </ul>
+        <textarea class="w‑full border rounded p‑2 h‑20 mb‑2" placeholder="Qual documento precisa?"></textarea>
+        <button class="btn btn‑p">Gerar</button>
+      </section>
+
+      <!-- GRÁFICA + IMPRESSORAS / BLUETOOTH -->
+      <section id="grafica" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Gráfica Completa • Pronto para Papelaria/Gráfica</h2>
+        <ul class="text‑sm mb‑3">
+          <li>Cartões, convites, camisetas, etiquetas <b>+ código de barras</b>, banners, fachadas</li>
+          <li>📡 Conexão: <b>BLUETOOTH • REDE • USB</b> → várias impressoras/maquinário ao mesmo tempo</li>
+          <li>📐 Tamanho e resolução <b>exatos para gráfica</b></li>
+          <li>🖼️ Imagens fiéis ao prompt, ultra‑realistas</li>
+        </ul>
+        <textarea class="w‑full border rounded p‑2 h‑20 mb‑2" placeholder="Descreva a arte ou imagem..."></textarea>
+        <div class="flex gap‑2">
+          <button class="btn btn‑p">🎨 Gerar</button>
+          <button class="btn btn‑s">🖨️ Enviar p/ Equipamento</button>
+        </div>
+      </section>
+
+      <!-- ÁLBUNS E FOTOS -->
+      <section id="albuns" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Álbuns • Portfólios • Fotos Profissionais</h2>
+        <p class="text‑sm mb‑2">Montagem automática casamento/eventos, melhoria e criação HD, baixar acervo completo + álbum em PDF/livro.</p>
+        <input type="file" multiple accept="image/*" class="mb‑2">
+        <button class="btn btn‑p">Organizar + Gerar Álbum</button>
+      </section>
+
+      <!-- EDUCAÇÃO / LIVROS -->
+      <section id="educ" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Livros • Apostilas • Vídeo‑aulas • Slides • Mapas Mentais</h2>
+        <p class="text‑sm">Capas, páginas internas, livros interativos, estruturas prontas para ensino.</p>
+      </section>
+
+      <!-- CONTÁBIL • MEI • DETRAN -->
+      <section id="contabil" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Contabilidade Completa • MEI • DETRAN • Despachante</h2>
+        <ul class="text‑sm">
+          <li>MEI: cadastro, declaração, guias, parcelamento</li>
+          <li>Empresas: abertura, tributos, balanços, folha</li>
+          <li>DETRAN: licenciamento, multas, transferência, docs</li>
+          <li>Tudo explicado passo‑a‑passo</li>
+        </ul>
+      </section>
+
+      <!-- LICITAÇÕES • LEILÕES • CAIXA • HABITAÇÃO -->
+      <section id="licit" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Licitações • Leilões • CAIXA • Casa Própria</h2>
+        <ul class="text‑sm">
+          <li>Busca automática editais: Prefeitura, Federal, Estadual, CAIXA</li>
+          <li>Analisa → gera todos documentos → cadastra → orienta</li>
+          <li>Leilões: federais, judiciais, bancários</li>
+          <li>🏠 Financiamento/Empréstimo: todas modalidades governo — tudo mastigado</li>
+        </ul>
+      </section>
+
+      <!-- DIGITAL: SITES • LOJAS • CLONAGEM • PUBLICAÇÃO -->
+      <section id="digital" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Criação Digital</h2>
+        <ul class="text‑sm">
+          <li>Sites, lojas, landing pages, fanpages — qualidade alta</li>
+          <li>Clonagem inteligente + edição rápida</li>
+          <li>📤 Envia para GitHub • 🚀 Publica direto Render/Netlify</li>
+          <li>Estrutura para aplicativos</li>
+        </ul>
+      </section>
+
+      <!-- PLANOS E PAGAMENTOS -->
+      <section id="planos" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Planos • Valores • Pagamento</h2>
+        <p class="text‑sm mb‑2">Estrutura pronta: Gratuito • Básico • Completo • Empresarial<br>Pix, boleto, cartão — liberação automática + recibo/histórico</p>
+      </section>
+
+      <!-- SISTEMA: VOZ, EVOLUÇÃO, ATUALIZAÇÃO, EQUIPAMENTOS -->
+      <section id="sistema" class="conteudo‑aba">
+        <h2 class="text‑lg font‑semibold mb‑2">Configurações e Tecnologia</h2>
+        <ul class="text‑sm">
+          <li>🔊 Voz personalizável — inclusive grave e firme</li>
+          <li>🧠 <b>Evolução contínua</b> — melhora com uso</li>
+          <li>🌐 <b>Varredura automática</b> — pega novidades da internet</li>
+          <li>📶 Impressoras, etiquetadoras, maquinário por Bluetooth/rede</li>
+          <li>📴 Modo OFFLINE ativado</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Navegação entre abas
+    document.querySelectorAll('.aba‑link').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.aba‑link').forEach(b => b.classList.remove('tab‑ativo'));
+        btn.classList.add('tab‑ativo');
+        document.querySelectorAll('.conteudo‑aba').forEach(c => c.classList.remove('conteudo‑ativo'));
+        document.getElementById(btn.dataset.aba).classList.add('conteudo‑ativo');
+      });
+    });
+  </script>
+</body>
+</html>
