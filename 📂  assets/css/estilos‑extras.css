@@ -1,0 +1,6 @@
+@media print {
+  nav, .btn, textarea { display:none !important; }
+  main { width:100%; margin:0; border:none; }
+}
+.offline‑ativo { background:#e8f4ff; border‑left:4px solid #0094FF; }
+.equip‑conectado { color:#2E7D32; font‑weight:500; }
