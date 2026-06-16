@@ -1,0 +1,7 @@
+{
+  "nome": "SAITRON",
+  "versao": "1.0.0",
+  "modo.offline": true,
+  "impressao.bluetooth": true,
+  "caminho.raiz": "./"
+}
