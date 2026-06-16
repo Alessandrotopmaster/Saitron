@@ -1,0 +1,12 @@
+{
+  "nome": "SAITRON",
+  "versao": "1.0",
+  "planos": {
+    "gratuito": {"limite":5, "funcoes":["docs‑basico","graficos‑simples"]},
+    "basico": {"limite":30, "funcoes":["todos‑docs","graficas"]},
+    "completo": {"limite":9999, "funcoes":["licitacoes","leiloes","habitação"]},
+    "empresarial": {"limite":99999, "funcoes":["tudo","varredura‑total","publicacao"]}
+  },
+  "modo_offline": true,
+  "impressao_bluetooth": true
+}
